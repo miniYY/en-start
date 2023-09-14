@@ -1,24 +1,60 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import GirdView from "./GridView";
+import './App.css'
 
-function App() {
+import React from 'react'
+
+const App = () => {
+
+
+  const [column, setColumn] = React.useState(5)
+
+
+  React.useEffect(() => {
+    if (window.innerWidth < window.innerHeight) {
+      setColumn(2)
+    }
+  }, [])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="container">
+
+
+        <GirdView
+          column={5}
+          data={
+            [{ value: 'bulletin',introduce:'公告/公布',talk:'/ˈbʊlətɪn/' }
+              , { value: 'efficient',introduce:'有效率的/效率高的',talk:'/ɪˈfɪʃnt/' }
+              , { value: 'acclaim' }
+              , { value: 'acknowledge' }
+              , { value: 'consistent' }
+              , { value: 'expose' }
+              , { value: 'firm' }
+              , { value: 'hollow' }
+              , { value: 'landscape' }
+              , { value: 'minimum' }
+              , { value: 'participant' }
+              , { value: 'purchase' }
+              , { value: 'reserve' }
+              , { value: 'representative' }
+              , { value: 'wealthy' }
+              , { value: 'universe' }
+              , { value: 'threaten' }
+              , { value: 'sticky' }
+              , { value: 'species' }
+              , { value: 'silence' }
+              , { value: 'resist' }
+              , { value: 'regret' }
+              , { value: 'pregnant' }
+              , { value: 'participant' }
+              , { value: 'obligation' }
+              , { value: 'maintain' }
+              , { value: 'latest' }
+              , { value: 'inner' }
+              , { value: 'hesitate' }
+              , { value: 'examination' }]} />
+      </div>
     </div>
   );
 }
