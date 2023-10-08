@@ -1,0 +1,19 @@
+#toolbar {
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    float: right;
+}
+
+.toolmenu-container {
+    width: 100%;
+    padding: 0px 20px;
+}

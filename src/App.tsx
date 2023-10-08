@@ -1,14 +1,10 @@
-import GirdView from "./GridView";
+import GirdView from "./widget/GridView";
 import './App.css'
-
 import React from 'react'
+import { ToolBar } from "./widget";
 
 const App = () => {
-
-
   const [column, setColumn] = React.useState(5)
-
-
   React.useEffect(() => {
     if (window.innerWidth < window.innerHeight) {
       setColumn(2)
@@ -19,13 +15,14 @@ const App = () => {
   return (
     <div className="App">
       <div id="container">
+        <ToolBar />
 
 
-        <GirdView
+        {/* <GirdView
           column={5}
           data={
-            [{ value: 'bulletin',introduce:'公告/公布',talk:'/ˈbʊlətɪn/' }
-              , { value: 'efficient',introduce:'有效率的/效率高的',talk:'/ɪˈfɪʃnt/' }
+            [{ value: 'bulletin', introduce: '公告/公布', talk: '/ˈbʊlətɪn/' }
+              , { value: 'efficient', introduce: '有效率的/效率高的', talk: '/ɪˈfɪʃnt/' }
               , { value: 'acclaim' }
               , { value: 'acknowledge' }
               , { value: 'consistent' }
@@ -53,7 +50,7 @@ const App = () => {
               , { value: 'latest' }
               , { value: 'inner' }
               , { value: 'hesitate' }
-              , { value: 'examination' }]} />
+              , { value: 'examination' }]} /> */}
       </div>
     </div>
   );
