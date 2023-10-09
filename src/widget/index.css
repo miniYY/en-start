@@ -5,15 +5,42 @@
     align-items: center;
 }
 
+h2 {
+    padding: 0px;
+}
+
 .icon {
     width: 25px;
     height: 25px;
     cursor: pointer;
 
-    float: right;
 }
 
 .toolmenu-container {
     width: 100%;
+    display: flex;
     padding: 0px 20px;
+
+}
+
+.toolmenu-middle {
+    flex: 1;
+
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.toolmenu-container>span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.toolmenu-right {
+    align-items: center;
+    display: flex;
+}
+
+.toolmenu-right>svg {
+    margin: 0px 10px;
 }

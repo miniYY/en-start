@@ -2,6 +2,7 @@ import GirdView from "./widget/GridView";
 import './App.css'
 import React from 'react'
 import { ToolBar } from "./widget";
+import { Footer } from "./component/Footer";
 
 const App = () => {
   const [column, setColumn] = React.useState(5)
@@ -16,6 +17,23 @@ const App = () => {
     <div className="App">
       <div id="container">
         <ToolBar />
+        <div style={{ clear: 'both' }}>
+          <div >
+            <div style={{ height: '200px' }}> </div>
+
+            <div style={{ height: '200px' }}> </div>
+
+            <div style={{ height: '200px' }}> </div>
+
+            <div style={{ height: '200px' }}> </div>
+
+            <div style={{ height: '200px' }}> </div>
+
+            <div style={{ height: '200px' }}> </div>
+          </div>
+          <Footer />
+        </div>
+
 
 
         {/* <GirdView

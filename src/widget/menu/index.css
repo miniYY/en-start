@@ -1,0 +1,22 @@
+.menu-container {
+    display: flex;
+
+}
+
+.tab {
+    border: none;
+    margin: 0px 0px 0px 20px;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.tab-select {
+    font-weight: bold;
+}
+
+
+.tab:hover {
+
+    font-weight: bold;
+}
