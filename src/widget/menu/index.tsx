@@ -13,7 +13,7 @@ export const Menu = (props: MenuProps) => {
 
 
     function menuStyle(num: number) {
-        return 'tab ' + (num == hoverPos ? 'tab-select' : '')
+        return 'tab ' + (num === hoverPos ? 'tab-select' : '')
     }
 
     return <div id='menu-container'>

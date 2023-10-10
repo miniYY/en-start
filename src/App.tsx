@@ -1,16 +1,12 @@
-import GirdView from "./widget/GridView";
+
 import './App.css'
 import React from 'react'
 import { ToolBar } from "./widget";
 import { Footer } from "./component/Footer";
+import Modal from './widget/dialog/modal';
 
 const App = () => {
-  const [column, setColumn] = React.useState(5)
-  React.useEffect(() => {
-    if (window.innerWidth < window.innerHeight) {
-      setColumn(2)
-    }
-  }, [])
+
 
 
   return (
@@ -19,6 +15,15 @@ const App = () => {
         <ToolBar />
         <div style={{ clear: 'both' }}>
           <div >
+            <button onClick={() => {
+              Modal.show({
+                title: '123',
+                close: true,
+                operateAble: true,
+                cancel: false,
+                ok: true
+              })
+            }}>click</button>
             <div style={{ height: '200px' }}> </div>
 
             <div style={{ height: '200px' }}> </div>
