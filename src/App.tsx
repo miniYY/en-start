@@ -4,6 +4,7 @@ import React from 'react'
 import { ToolBar } from "./widget";
 import { Footer } from "./component/Footer";
 import Modal from './widget/dialog/modal';
+import { Price } from './widget/price';
 
 const App = () => {
 
@@ -37,7 +38,7 @@ const App = () => {
                     return <div style={{ margin: '20px', cursor: 'pointer', width: '300px', height: '360px' }}>
                       <img width={300} src='https://i5.walmartimages.com/seo/Hocus-Pocus-Girls-Halloween-Sweatshirt-Sizes-4-16_fb77048d-35b0-4e53-b9da-87c6864f48fd.5a65eaf861e4e665bddbf27c9dee6f60.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF' />
 
-                      <span>$12.6</span>
+                      <Price unit='$' value={79.99} />
                       <p style={{ color: '#46474a', padding: '10px 0px' }}>Wonder Nation Toddlers Unisex Halloween T-Shirt, Sizes 12M-5T</p>
 
                     </div>
