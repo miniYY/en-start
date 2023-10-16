@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 
 import ReactDOM from 'react-dom';
 import Portal from '..';
@@ -28,7 +28,7 @@ const Modal = (props: ModalProps) => {
 
     const [show, setShow] = useState(visible)
     function closeModal() {
-        
+
         if (typeof cancel === 'function') {
             cancel()
         } else {
@@ -111,13 +111,17 @@ export default Modal;
 
 
 Modal.show = (props: ModalProps) => {
-    const { ok, cancel, close, title, closeIcon = false, children, operateAble = false } = props
+    const { ok = true, cancel = true, close = true, title, closeIcon = false, children, operateAble = false } = props
 
 
+    //弹窗隐藏进度条
+    document.body.style.overflow = 'hidden'
     let element = document.createElement('div');
     document.body.appendChild(element);
     const onCloseEvent = () => {
         // ReactDOM.render(getModalNode(false), element)
+
+        document.body.style.overflow = 'auto'
         ReactDOM.unmountComponentAtNode(element);
         element.remove();
     }

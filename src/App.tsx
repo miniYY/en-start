@@ -20,8 +20,10 @@ const App = () => {
                 title: '123',
                 close: true,
                 operateAble: true,
-                cancel: false,
-                ok: true
+                children: <div>
+                  <div>123</div>
+                  <div>123</div>
+                </div>,
               })
             }}>click</button>
             <div style={{ height: '200px' }}> </div>
