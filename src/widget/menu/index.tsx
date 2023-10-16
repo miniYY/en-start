@@ -19,6 +19,6 @@ export const Menu = (props: MenuProps) => {
     return <div id='menu-container'>
         <button className={menuStyle(0)} onClick={() => setHoverPosi(0)}>Christmas</button>
         <button className={menuStyle(1)} onClick={() => setHoverPosi(1)}>Hot</button>
-        <button className={menuStyle(2)} onClick={() => setHoverPosi(2)}>gift</button>
+        <button className={menuStyle(2)} onClick={() => setHoverPosi(2)}>Gift</button>
     </div>
 }

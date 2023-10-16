@@ -9,14 +9,16 @@
     outline: none;
     background: none;
     cursor: pointer;
+    
+    font-weight: bold;
 }
 
 .tab-select {
     font-weight: bold;
+    color: var(--Primary-color);
 }
 
 
 .tab:hover {
 
-    font-weight: bold;
 }

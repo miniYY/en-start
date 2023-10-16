@@ -15,7 +15,7 @@ const App = () => {
         <ToolBar />
         <div style={{ clear: 'both' }}>
           <div >
-            <button onClick={() => {
+            {/* <button onClick={() => {
               Modal.show({
                 title: '123',
                 close: true,
@@ -25,57 +25,34 @@ const App = () => {
                   <div>123</div>
                 </div>,
               })
-            }}>click</button>
-            <div style={{ height: '200px' }}> </div>
+            }}>click</button> */}
+            <div style={{ display: 'flex', flexWrap: 'wrap' }}>
 
-            <div style={{ height: '200px' }}> </div>
+              {
+                [{ title: '1', color: 'red' }, { title: '1', color: 'green' }, { title: '1', color: 'yellow' },
+                { title: '1', color: 'red' }, { title: '1', color: 'green' }, { title: '1', color: 'yellow' }
+                  , { title: '1', color: 'red' }, { title: '1', color: 'green' }, { title: '1', color: 'yellow' }
+                  , { title: '1', color: 'red' }, { title: '1', color: 'green' }, { title: '1', color: 'yellow' }]
+                  .map((element) => {
+                    return <div style={{ margin: '20px', cursor: 'pointer', width: '300px', height: '360px' }}>
+                      <img width={300} src='https://i5.walmartimages.com/seo/Hocus-Pocus-Girls-Halloween-Sweatshirt-Sizes-4-16_fb77048d-35b0-4e53-b9da-87c6864f48fd.5a65eaf861e4e665bddbf27c9dee6f60.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF' />
 
-            <div style={{ height: '200px' }}> </div>
+                      <span>$12.6</span>
+                      <p style={{ color: '#46474a', padding: '10px 0px' }}>Wonder Nation Toddlers Unisex Halloween T-Shirt, Sizes 12M-5T</p>
 
-            <div style={{ height: '200px' }}> </div>
+                    </div>
+                  })
+              }
 
-            <div style={{ height: '200px' }}> </div>
+            </div>
+            <div style={{ textAlign: 'center', alignContent: 'center', padding: '20px 0px' }}>1,2,3,4,5</div>
 
-            <div style={{ height: '200px' }}> </div>
           </div>
           <Footer />
         </div>
 
 
 
-        {/* <GirdView
-          column={5}
-          data={
-            [{ value: 'bulletin', introduce: '公告/公布', talk: '/ˈbʊlətɪn/' }
-              , { value: 'efficient', introduce: '有效率的/效率高的', talk: '/ɪˈfɪʃnt/' }
-              , { value: 'acclaim' }
-              , { value: 'acknowledge' }
-              , { value: 'consistent' }
-              , { value: 'expose' }
-              , { value: 'firm' }
-              , { value: 'hollow' }
-              , { value: 'landscape' }
-              , { value: 'minimum' }
-              , { value: 'participant' }
-              , { value: 'purchase' }
-              , { value: 'reserve' }
-              , { value: 'representative' }
-              , { value: 'wealthy' }
-              , { value: 'universe' }
-              , { value: 'threaten' }
-              , { value: 'sticky' }
-              , { value: 'species' }
-              , { value: 'silence' }
-              , { value: 'resist' }
-              , { value: 'regret' }
-              , { value: 'pregnant' }
-              , { value: 'participant' }
-              , { value: 'obligation' }
-              , { value: 'maintain' }
-              , { value: 'latest' }
-              , { value: 'inner' }
-              , { value: 'hesitate' }
-              , { value: 'examination' }]} /> */}
       </div>
     </div>
   );
