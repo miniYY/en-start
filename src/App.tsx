@@ -1,11 +1,10 @@
 
 import './App.css'
-import React from 'react'
 import { ToolBar } from "./widget";
 import { Footer } from "./component/Footer";
-import Modal from './widget/dialog/modal';
 import { Price } from './widget/price';
 
+import { Route, Routes, useNavigate } from 'react-router-dom';
 const App = () => {
 
 
@@ -15,19 +14,8 @@ const App = () => {
       <div id="container">
         <ToolBar />
         <div style={{ clear: 'both' }}>
-          <div >
-            {/* <button onClick={() => {
-              Modal.show({
-                title: '123',
-                close: true,
-                operateAble: true,
-                children: <div>
-                  <div>123</div>
-                  <div>123</div>
-                </div>,
-              })
-            }}>click</button> */}
-            <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+          <Routes>
+            <Route path='/' element={<div ><div style={{ display: 'flex', flexWrap: 'wrap' }}>
 
               {
                 [{ title: '1', color: 'red' }, { title: '1', color: 'green' }, { title: '1', color: 'yellow' },
@@ -46,9 +34,12 @@ const App = () => {
               }
 
             </div>
-            <div style={{ textAlign: 'center', alignContent: 'center', padding: '20px 0px' }}>1,2,3,4,5</div>
+              <div style={{ textAlign: 'center', alignContent: 'center', padding: '20px 0px' }}>1,2,3,4,5</div>
+            </div>
+            }></Route>
+            <Route path='/store' element={<div >store</div>}></Route>
+          </Routes>
 
-          </div>
           <Footer />
         </div>
 
