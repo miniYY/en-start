@@ -20,7 +20,24 @@
     margin: 0px 80px;
     cursor: pointer;
 }
+
 .footer-menu-layout {
     display: flex;
-    
+
+}
+
+
+
+
+/**
+PDetails
+**/
+.detailimages-view {
+    white-space: nowrap;
+    overflow: scroll;
+    height: 100px;
+    max-width: 360px;
+}
+.detailimages-view::-webkit-scrollbar{
+    display: none;
 }
