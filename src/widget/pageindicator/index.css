@@ -1,0 +1,21 @@
+.indicator-page {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+
+    outline: none;
+    border: none;
+    margin: 0px 5px;
+}
+.indicator-page-select {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+
+    margin: 0px 5px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: var(--Primary-color);
+}
+
