@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import './index.css'
 import { Menu } from './menu'
 
@@ -9,6 +10,7 @@ interface ToolBarProps {
 export const ToolBar = (props: ToolBarProps) => {
 
 
+    const navigate = useNavigate()
     return <div id='toolbar'>
 
         <div className='toolmenu-container'>
@@ -21,9 +23,11 @@ export const ToolBar = (props: ToolBarProps) => {
                 <svg className="icon" aria-hidden="true">
                     <use xlinkHref="#icon-search"></use>
                 </svg>
-                <svg className="icon" aria-hidden="true">
+
+                <a onClick={()=>navigate('cart')}>  <svg className="icon" aria-hidden="true">
                     <use xlinkHref="#icon-cart"></use>
                 </svg>
+                </a>
                 <svg className="icon" aria-hidden="true">
                     <use xlinkHref="#icon-user"></use>
                 </svg>
