@@ -22,6 +22,9 @@ export const ToolBar = (props: ToolBarProps) => {
                     <use xlinkHref="#icon-search"></use>
                 </svg>
                 <svg className="icon" aria-hidden="true">
+                    <use xlinkHref="#icon-cart"></use>
+                </svg>
+                <svg className="icon" aria-hidden="true">
                     <use xlinkHref="#icon-user"></use>
                 </svg>
             </div>

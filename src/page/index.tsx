@@ -27,7 +27,7 @@ export const Products = () => {
             { title: '1', color: 'red', total: 12.1 },]
                 .map((element) => {
                     return <div onClick={() => {
-                        navigate('/detail')
+                        window.open('/detail','_blank')
                     }} style={{ margin: '20px', cursor: 'pointer', width: '300px', height: '360px' }}>
                         <img width={300} src='https://i5.walmartimages.com/seo/Hocus-Pocus-Girls-Halloween-Sweatshirt-Sizes-4-16_fb77048d-35b0-4e53-b9da-87c6864f48fd.5a65eaf861e4e665bddbf27c9dee6f60.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF' />
 
